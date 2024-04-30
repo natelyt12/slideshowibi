@@ -1,0 +1,123 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+}
+*{
+    transition: all 0.7s cubic-bezier(0.130, 0.570, 0.545, 0.990);
+    font-family: 'Bahnschrift', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#control{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid grey;
+    width: 100px;
+    z-index: 100;
+    transition: 0.5s;
+
+}
+#control:hover{
+    background-color: white;
+    border: white 1px solid;
+    color: black;
+}
+
+/* CONTAINERRR */
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 375px;
+    height: 667px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.intro{
+    height: 100%;
+    position: relative;
+    width: 375px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+}
+.text p{
+    color: white;
+    margin: 5px 0;
+}
+
+.credit{
+    color: rgba(255, 255, 255, 0.596) !important;
+}
+
+.card{
+    background-size: cover;
+    background-position: center;
+    width: 0;
+    border-radius: 10px;
+}
+
+.c1{
+    background-image: url('./asset/image/1.jpg');
+}
+.c2{
+    background-image: url('./asset/image/2.jpg');
+}
+.c3{
+    background-image: url('./asset/image/3.jpg');
+}
+.c4{
+    background-image: url('./asset/image/4.jpg');
+}
+.c5{
+    background-image: url('./asset/image/5.jpg');
+}
+.c6{
+    background-image: url('./asset/image/6.jpg');
+}
+.c7{
+    background-image: url('./asset/image/7.jpg');
+}
+.c8{
+    background-image: url('./asset/image/8.jpg');
+}
+.c9{
+    background-image: url('./asset/image/9.jpg');
+}
+.c10{
+    background-image: url('./asset/image/10.jpg');
+}
+.c11{
+    background-image: url('./asset/image/11.jpg');
+}
+.c12{
+    background-image: url('./asset/image/12.jpg');
+}
+.c13{
+    background-image: url('./asset/image/13.jpg');
+}
+.c14{
+    background-image: url('./asset/image/14.jpg');
+}
+.c15{
+    background-image: url('./asset/image/15.jpg');
+}
+.c16{
+    background-image: url('./asset/image/16.jpg');
+}

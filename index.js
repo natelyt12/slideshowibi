@@ -1,9 +1,9 @@
 let bgsong = document.getElementById('bgsong');
 let startbtn = document.getElementById('control')
+let container = document.getElementsByClassName('container')[0]
 function play() {
     bgsong.play();
-    startbtn.style.width = '300px'
-    startbtn.style.transform = 'translate(-50%, 80px)'
+    startbtn.style.transform = 'translate(-50%, 180px)'
     setTimeout(() => {
         startbtn.style.display = 'none'
         document.getElementsByClassName('text')[0].style.opacity = '1'
@@ -126,4 +126,59 @@ function letsgo() {
         document.getElementsByClassName('c16')[0].style.width = '375px'
     }, 23300);
 
+    setTimeout(() => {
+        document.getElementsByClassName('c16')[0].style.width = '0px'
+        document.getElementsByClassName('c17')[0].style.width = '375px'
+    }, 24000);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c17')[0].style.width = '0px'
+        document.getElementsByClassName('c18')[0].style.width = '375px'
+    }, 24700);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c18')[0].style.width = '0px'
+        document.getElementsByClassName('c19')[0].style.width = '375px'
+    }, 25400);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c19')[0].style.width = '0px'
+        document.getElementsByClassName('c20')[0].style.width = '375px'
+    }, 26100);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c20')[0].style.width = '0px'
+        document.getElementsByClassName('c21')[0].style.width = '375px'
+    }, 26800);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c21')[0].style.width = '0px'
+        document.getElementsByClassName('c22')[0].style.width = '100%'
+        setTimeout(() => {
+            container.style.position = 'absolute'
+            container.style.transform = 'translate(-50%, -50%) rotate(90deg)'
+            container.style.width = '667px'
+            container.style.height = '375px'
+        }, 300);
+    }, 27500);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c22')[0].style.width = '333.5px'
+        document.getElementsByClassName('c23')[0].style.width = '333.5px'
+    }, 28900);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c22')[0].style.width = '0px'
+        document.getElementsByClassName('c23')[0].style.width = '667px'
+    }, 29600);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c23')[0].style.width = '333.5px'
+        document.getElementsByClassName('c24')[0].style.width = '333.5px'
+    }, 30300);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c23')[0].style.width = '0px'
+        document.getElementsByClassName('c24')[0].style.width = '667px'
+    }, 31000);
 }

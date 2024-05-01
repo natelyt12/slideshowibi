@@ -18,7 +18,7 @@ body{
     background-color: transparent;
     color: white;
     border: 1px solid grey;
-    width: 100px;
+    width: 200px;
     z-index: 100;
     transition: 0.5s;
 
@@ -39,6 +39,7 @@ body{
     height: 667px;
     display: flex;
     border-radius: 10px;
+    transition: 1.5s !important;
 }
 
 .intro{
@@ -120,4 +121,28 @@ body{
 }
 .c16{
     background-image: url('./asset/image/16.jpg');
+}
+.c17{
+    background-image: url('./asset/image/17.jpg');
+}
+.c18{
+    background-image: url('./asset/image/18.jpg');
+}
+.c19{
+    background-image: url('./asset/image/19.jpg');
+}
+.c20{
+    background-image: url('./asset/image/20.jpg');
+}
+.c21{
+    background-image: url('./asset/image/21.jpg');
+}
+.c22{
+    background-image: url('./asset/image/22.jpg');
+}
+.c23{
+    background-image: url('./asset/image/23.jpg');
+}
+.c24{
+    background-image: url('./asset/image/24.png');
 }

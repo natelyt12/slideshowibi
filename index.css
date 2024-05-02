@@ -1,40 +1,79 @@
-body{
+body {
     background-color: black;
     overflow: hidden;
     margin: 0;
 }
-*{
+
+* {
     transition: all 0.7s cubic-bezier(0.130, 0.570, 0.545, 0.990);
     font-family: 'Bahnschrift', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#control{
+button {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid grey;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: white;
+    border: white 1px solid;
+    color: black;
+}
+
+#control {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
     padding: 5px 10px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid grey;
     width: 200px;
-    z-index: 100;
-    transition: 0.5s;
-
 }
-#control:hover{
-    background-color: white;
-    border: white 1px solid;
-    color: black;
+
+#more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+/* More container */
+.more-container {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px 10px 50px 0px;
+    border: 1px solid grey;
+    padding: 10px;
+    transition: 0.5s;
+    z-index: 100;
+}
+.more-container p{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.700);
+}
+.more-container a{
+    color: white;
+}
+.more-container a:active{
+    border: 1px solid white;
+}
+
+.toggle{
+    opacity: 1;
 }
 
 /* CONTAINERRR */
-.container{
+.container {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 375px;
     height: 667px;
     display: flex;
@@ -42,13 +81,13 @@ body{
     transition: 1.5s !important;
 }
 
-.intro{
+.intro {
     height: 100%;
     position: relative;
     width: 375px;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,91 +97,115 @@ body{
     width: 100%;
     opacity: 0;
 }
-.text p{
+
+.text p {
     color: white;
     margin: 5px 0;
 }
 
-.credit{
+.credit {
     color: rgba(255, 255, 255, 0.596) !important;
 }
 
-.card{
+.card {
     background-size: cover;
     background-position: center;
     width: 0;
     border-radius: 10px;
 }
 
-.c1{
+.c1 {
     background-image: url('./asset/image/1.jpg');
 }
-.c2{
+
+.c2 {
     background-image: url('./asset/image/2.jpg');
 }
-.c3{
+
+.c3 {
     background-image: url('./asset/image/3.jpg');
 }
-.c4{
+
+.c4 {
     background-image: url('./asset/image/4.jpg');
 }
-.c5{
+
+.c5 {
     background-image: url('./asset/image/5.jpg');
 }
-.c6{
+
+.c6 {
     background-image: url('./asset/image/6.jpg');
 }
-.c7{
+
+.c7 {
     background-image: url('./asset/image/7.jpg');
 }
-.c8{
+
+.c8 {
     background-image: url('./asset/image/8.jpg');
 }
-.c9{
+
+.c9 {
     background-image: url('./asset/image/9.jpg');
 }
-.c10{
+
+.c10 {
     background-image: url('./asset/image/10.jpg');
 }
-.c11{
+
+.c11 {
     background-image: url('./asset/image/11.jpg');
 }
-.c12{
+
+.c12 {
     background-image: url('./asset/image/12.jpg');
 }
-.c13{
+
+.c13 {
     background-image: url('./asset/image/13.jpg');
 }
-.c14{
+
+.c14 {
     background-image: url('./asset/image/14.jpg');
 }
-.c15{
+
+.c15 {
     background-image: url('./asset/image/15.jpg');
 }
-.c16{
+
+.c16 {
     background-image: url('./asset/image/16.jpg');
 }
-.c17{
+
+.c17 {
     background-image: url('./asset/image/17.jpg');
 }
-.c18{
+
+.c18 {
     background-image: url('./asset/image/18.jpg');
 }
-.c19{
+
+.c19 {
     background-image: url('./asset/image/19.jpg');
 }
-.c20{
+
+.c20 {
     background-image: url('./asset/image/20.jpg');
 }
-.c21{
+
+.c21 {
     background-image: url('./asset/image/21.jpg');
 }
-.c22{
+
+.c22 {
     background-image: url('./asset/image/22.jpg');
 }
-.c23{
+
+.c23 {
     background-image: url('./asset/image/23.jpg');
 }
-.c24{
+
+.c24 {
     background-image: url('./asset/image/24.png');
 }

@@ -1,15 +1,27 @@
 let bgsong = document.getElementById('bgsong');
 let startbtn = document.getElementById('control')
 let container = document.getElementsByClassName('container')[0]
+let more = document.getElementById('more')
+let morecontainer = document.getElementsByClassName('more-container')[0]
+
 function play() {
     bgsong.play();
     startbtn.style.transform = 'translate(-50%, 180px)'
+    morecontainer.style.opacity = '0'
+    more.style.opacity = '0'
     setTimeout(() => {
         startbtn.style.display = 'none'
         document.getElementsByClassName('text')[0].style.opacity = '1'
+        morecontainer.style.display = 'none'
     }, 500);
     letsgo()
 }
+
+more.addEventListener('click', () => {
+    let toggle = document.querySelector('.more-container');
+    toggle.classList.toggle('toggle')
+
+})
 
 function letsgo() {
     setTimeout(() => {
@@ -156,7 +168,11 @@ function letsgo() {
         document.getElementsByClassName('c22')[0].style.width = '100%'
         setTimeout(() => {
             container.style.position = 'absolute'
-            container.style.transform = 'translate(-50%, -50%) rotate(90deg)'
+            if (window.matchMedia('(max-width: 720px)').matches) {
+                container.style.transform = 'translate(-50%, -50%) rotate(90deg)'
+            } else {
+                container.style.transform = 'translate(-50%, -50%) scale(160%)'
+            }
             container.style.width = '667px'
             container.style.height = '375px'
         }, 300);

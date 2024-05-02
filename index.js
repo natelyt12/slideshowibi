@@ -157,6 +157,7 @@ function letsgo() {
         setTimeout(() => {
             container.style.position = 'absolute'
             container.style.transform = 'translate(-50%, -50%) rotate(90deg)'
+            container.style.webkitTransform = 'translate(-50%, -50%) rotate(90deg)'
             container.style.width = '667px'
             container.style.height = '375px'
         }, 300);

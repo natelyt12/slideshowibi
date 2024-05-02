@@ -165,20 +165,20 @@ function letsgo() {
     setTimeout(() => {
         document.getElementsByClassName('c22')[0].style.width = '333.5px'
         document.getElementsByClassName('c23')[0].style.width = '333.5px'
-    }, 28900);
+    }, 29600);
 
     setTimeout(() => {
         document.getElementsByClassName('c22')[0].style.width = '0px'
         document.getElementsByClassName('c23')[0].style.width = '667px'
-    }, 29600);
+    }, 30300);
 
     setTimeout(() => {
         document.getElementsByClassName('c23')[0].style.width = '333.5px'
         document.getElementsByClassName('c24')[0].style.width = '333.5px'
-    }, 30300);
+    }, 31000);
 
     setTimeout(() => {
         document.getElementsByClassName('c23')[0].style.width = '0px'
         document.getElementsByClassName('c24')[0].style.width = '667px'
-    }, 31000);
+    }, 31700);
 }

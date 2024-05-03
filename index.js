@@ -1,12 +1,16 @@
 let bgsong = document.getElementById('bgsong');
-let startbtn = document.getElementById('control')
+let startbtn = document.getElementsByClassName('btn')[0]
 let container = document.getElementsByClassName('container')[0]
 let more = document.getElementById('more')
 let morecontainer = document.getElementsByClassName('more-container')[0]
+let bg1 = document.getElementById('bg1')
 
+
+// Press the button
 function play() {
     bgsong.play();
-    startbtn.style.transform = 'translate(-50%, 180px)'
+    document.getElementById('bg1').style.transform = 'translateX(-350px) skew(40deg)'
+    startbtn.style.opacity = '0'
     morecontainer.style.opacity = '0'
     more.style.opacity = '0'
     setTimeout(() => {
@@ -17,11 +21,22 @@ function play() {
     letsgo()
 }
 
+// Button components
+function hover() {
+    bg1.style.transform = 'skewX(40deg) translateX(-20px)'
+}
+
+function release() {
+    bg1.style.transform = 'skewX(40deg) translateX(250px)'
+}
+
+// Toggle the info box
 more.addEventListener('click', () => {
     let toggle = document.querySelector('.more-container');
     toggle.classList.toggle('toggle')
 })
 
+// Payload
 function letsgo() {
     setTimeout(() => {
         document.getElementsByClassName('text')[0].style.opacity = '0'
@@ -267,16 +282,5 @@ function letsgo() {
         document.getElementsByClassName('c30')[0].style.width = '0px'
         document.getElementsByClassName('c31')[0].style.width = '667px'
     }, 41500);
-
-    setTimeout(() => {
-        document.getElementsByClassName('c31')[0].style.width = '333.5px'
-        document.getElementsByClassName('c32')[0].style.width = '333.5px'
-    }, 42200);
-
-    setTimeout(() => {
-        document.getElementsByClassName('c31')[0].style.width = '0px'
-        document.getElementsByClassName('c32')[0].style.width = '667px'
-    }, 42900);
-
 
 }

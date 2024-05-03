@@ -20,7 +20,6 @@ function play() {
 more.addEventListener('click', () => {
     let toggle = document.querySelector('.more-container');
     toggle.classList.toggle('toggle')
-
 })
 
 function letsgo() {
@@ -171,7 +170,8 @@ function letsgo() {
             if (window.matchMedia('(max-width: 720px)').matches) {
                 container.style.transform = 'translate(-50%, -50%) rotate(90deg)'
             } else {
-                container.style.transform = 'translate(-50%, -50%) scale(160%)'
+                container.style.transform = 'translate(-50%, -50%) scale(170%)'
+
             }
             container.style.width = '667px'
             container.style.height = '375px'
@@ -197,4 +197,86 @@ function letsgo() {
         document.getElementsByClassName('c23')[0].style.width = '0px'
         document.getElementsByClassName('c24')[0].style.width = '667px'
     }, 31700);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c24')[0].style.width = '333.5px'
+        document.getElementsByClassName('c25')[0].style.width = '333.5px'
+    }, 32400);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c24')[0].style.width = '0px'
+        document.getElementsByClassName('c25')[0].style.width = '667px'
+    }, 33100);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c25')[0].style.width = '333.5px'
+        document.getElementsByClassName('c26')[0].style.width = '333.5px'
+    }, 33800);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c25')[0].style.width = '0px'
+        document.getElementsByClassName('c26')[0].style.width = '667px'
+    }, 34500);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c26')[0].style.width = '333.5px'
+        document.getElementsByClassName('c27')[0].style.width = '333.5px'
+    }, 35200);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c26')[0].style.width = '0px'
+        document.getElementsByClassName('c27')[0].style.width = '667px'
+    }, 35900);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c27')[0].style.width = '333.5px'
+        document.getElementsByClassName('c28')[0].style.width = '333.5px'
+    }, 36600);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c27')[0].style.width = '0px'
+        document.getElementsByClassName('c28')[0].style.width = '667px'
+    }, 37300);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c28')[0].style.width = '333.5px'
+        document.getElementsByClassName('c29')[0].style.width = '333.5px'
+    }, 38000);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c28')[0].style.width = '0px'
+        document.getElementsByClassName('c29')[0].style.width = '667px'
+    }, 38700);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c29')[0].style.width = '333.5px'
+        document.getElementsByClassName('c30')[0].style.width = '333.5px'
+    }, 39400);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c29')[0].style.width = '0px'
+        document.getElementsByClassName('c30')[0].style.width = '667px'
+    }, 40100);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c30')[0].style.width = '333.5px'
+        document.getElementsByClassName('c31')[0].style.width = '333.5px'
+    }, 40800);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c30')[0].style.width = '0px'
+        document.getElementsByClassName('c31')[0].style.width = '667px'
+    }, 41500);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c31')[0].style.width = '333.5px'
+        document.getElementsByClassName('c32')[0].style.width = '333.5px'
+    }, 42200);
+
+    setTimeout(() => {
+        document.getElementsByClassName('c31')[0].style.width = '0px'
+        document.getElementsByClassName('c32')[0].style.width = '667px'
+    }, 42900);
+
+
 }
